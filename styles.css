@@ -88,17 +88,21 @@ main {
 }
 
 #contact, #somePhoto {
-	border: solid black 1px;
 	padding: 3% 3% 2% 3%;
 }
 
 #contact {
-	margin: 5% 15% 0 20%;
+	margin: 5% 5% 2% 20%;
+}
+
+form {
 	background-color: rgb(109, 81, 132);
+	height: 100%;
+	color: white;
 }
 
 #somePhoto {
-	margin: 5% 20% 0 15%;
+	margin: 5% 20% 2% 15%;
 	border: solid rgb(253, 207, 189) 7px;
 }
 

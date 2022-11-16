@@ -45,7 +45,34 @@
 			</div>
 		</div>
 		
-		<div id="contact">aiouehfapehij
+		<div id="contact">
+			<form id="contactForm">
+				<p>CONTACT US</p>
+				<label for="contactType">What can we help you with?</label>
+				<br/>
+				<select id="contactType" name="contactType" required>
+					<option disabled selected> -- select topic --</option>
+					<option value="Service">Service Request</option>
+					<option value="Reschedule">Reschedule</option>
+					<option value="Cancelation">Cancellation</option>
+					<option value="Feedback">Feedback</option>
+					<option value="Inquiry">General Inquiry</option>
+				</select>
+				<br/>
+				<label for="name">Name</label>
+				<br/>
+				<input type="text" id="name" name="name" maxlength="25" required/>
+				<label for="email">Email</label>
+				<br/>
+				<input type="email" id="email" name="email"  placeholder="name@example.com" required/>
+				<label for="phone">Phone</label>
+				<br/>
+				<input type="tel" id="phonel" name="phone" maxlength="10" placeholder="(000) 000-0000" pattern="[0-9]{10}" require/>
+				<label for="comments">Comments</label>
+				<br/>
+				<textarea id="comments" name="comments" placeholder="Write something..." required></textarea>
+				<input type="submit" id="submit" name="submit" value="Submit" action="contactForm.php"/>
+			</form>
 		</div>
 		
 		<div id="somePhoto"><img src="images/florist.jpeg">
