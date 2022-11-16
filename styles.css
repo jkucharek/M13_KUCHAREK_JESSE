@@ -92,7 +92,7 @@ main {
 }
 
 #contact {
-	margin: 5% 5% 2% 20%;
+	margin: 5% 5% 7% 20%;
 	text-align: left;
 }
 
@@ -129,6 +129,18 @@ input[type=text], input[type=email], textarea {
 textarea {
 	height: 15%;
 	resize: none;
+}
+
+#submit {
+	width: 33%;
+	height: 7.5%;
+	margin-left: 1%;
+	background-color: white;
+	border-radius: 5px;
+	color: rgb(109, 81, 132);
+	font-weight: bold;
+	border-top: gray;
+	border-left: gray;
 }
 
 #somePhoto {
