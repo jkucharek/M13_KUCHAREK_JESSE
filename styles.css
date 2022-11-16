@@ -6,6 +6,7 @@ body {
 	text-align: center;
 	display: grid;
 	margin: 0 auto;
+	min-width: 760px;
 }
 
 #logo {
@@ -42,13 +43,31 @@ nav {
 }
 
 #products {
+	color: white;
+	font-weight: bold;
 	margin-left: auto;
 	margin-right: auto;
 	display: grid;
+	padding-top: 2.5%;
 	width: 80%;
 	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 7.5%;
 }
 
-#products div {
-	border: solid black 1px;
+#products img {
+	padding-top: 10%;
+	width: 70%;
+	height: auto;
+}
+
+#products div:nth-of-type(1) {
+	background-color: rgb(225, 165, 214);
+}
+
+#products div:nth-of-type(2) {
+	background-color: rgb(180, 203, 232);
+}
+
+#products div:nth-of-type(3) {
+	background-color: rgb(253, 207, 189);
 }
