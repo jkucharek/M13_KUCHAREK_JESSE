@@ -1,4 +1,7 @@
 /*color: rgb(109, 81, 132);*/
+html{
+	background-color: rgb(63, 63, 63);
+}
 
 body {
 	color: rgb(109, 81, 132);
@@ -7,6 +10,8 @@ body {
 	display: grid;
 	margin: 0 auto;
 	min-width: 760px;
+	max-width: 1680px;
+	background-color: white;
 }
 
 #logo {
@@ -30,6 +35,17 @@ nav {
 	font-weight: bold;
 }
 
+main {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#allOccasions {
+	grid-column: 1/3;
+}
+
 #allOccasions p:nth-of-type(1) {
 	font-weight: bold;
 	font-size: 2rem;
@@ -43,13 +59,12 @@ nav {
 }
 
 #products {
+	margin: 0 10% 0 10%;
+	grid-column: 1/3;
 	color: white;
 	font-weight: bold;
-	margin-left: auto;
-	margin-right: auto;
 	display: grid;
 	padding-top: 2.5%;
-	width: 80%;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 7.5%;
 }
@@ -70,4 +85,42 @@ nav {
 
 #products div:nth-of-type(3) {
 	background-color: rgb(253, 207, 189);
+}
+
+#contact, #somePhoto {
+	border: solid black 1px;
+	padding: 3% 3% 2% 3%;
+}
+
+#contact {
+	margin: 5% 15% 0 20%;
+	background-color: rgb(109, 81, 132);
+}
+
+#somePhoto {
+	margin: 5% 20% 0 15%;
+	border: solid rgb(253, 207, 189) 7px;
+}
+
+#somePhoto img {
+	width: 100%;
+	height: auto;
+}
+
+
+
+footer {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: minmax(100px, auto);
+	grid-gap: 18%;
+	background-image: linear-gradient(to left, rgb(251, 204, 191), rgb(225, 165, 214), rgb(251, 204, 191));
+	padding: 0 10% 0 10%;
+}
+
+footer p {
+	color: white;
+	font-weight: bold;
+	margin-top: auto;
+	margin-bottom: auto;
 }
