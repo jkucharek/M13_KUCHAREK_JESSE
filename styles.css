@@ -1,22 +1,35 @@
 /*color: rgb(109, 81, 132);*/
 
 /*Add some comments to this code to delineate sections and explain what's going on where confusing*/
+
+/*Adds a 75% gray background if browser window exceeds max width*/
 html{
 	background-color: rgb(63, 63, 63);
 }
 
+/*establishes min/max webpage width, background color for content and text formatting for all children*/
 body {
 	color: rgb(109, 81, 132);
 	font-family: arial, sans-serif;
 	text-align: center;
-	display: grid;
 	margin: 0 auto;
 	min-width: 760px;
 	max-width: 1680px;
 	background-color: white;
 }
 
+/*establishes grid display for all children of the body and main tags*/
+body > *, main > * {
+	display: grid;
+}
+
+
+
+
+/*header area formatting*/
 #logo {
+	margin-left: auto;
+	margin-right: auto;
 	width: 150px;
 	height: 150px;
 }
@@ -28,8 +41,11 @@ header p {
 	padding: 0.25%;
 }
 
+
+
+
+/*nav area formatting*/
 nav {
-	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	background-image: linear-gradient(to right, rgb(253, 206, 189), rgb(225, 165, 213), rgb(253, 206, 189));
 	padding: .75%;
@@ -37,13 +53,18 @@ nav {
 	font-weight: bold;
 }
 
+
+
+
+
+/*main area formatting*/
 main {
-	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	margin-left: auto;
 	margin-right: auto;
 }
 
+/*formatting for slogan and lorem ipsum text*/
 #allOccasions {
 	grid-column: 1/3;
 }
@@ -60,12 +81,12 @@ main {
 	padding: 0 1%;
 }
 
+/*formatting for product offerings*/
 #products {
 	margin: 0 10% 0 10%;
 	grid-column: 1/3;
 	color: white;
 	font-weight: bold;
-	display: grid;
 	padding-top: 2.5%;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 7.5%;
@@ -89,10 +110,12 @@ main {
 	background-color: rgb(253, 207, 189);
 }
 
+/*establish basic padding for two elements at bottom of page*/
 #contact, #somePhoto {
 	padding: 3% 3% 2% 3%;
 }
 
+/*formatting for the contact form*/
 #contact {
 	margin: 5% 5% 7% 20%;
 	text-align: left;
@@ -145,6 +168,7 @@ textarea {
 	border-left: gray;
 }
 
+/*formatting for the florist photo*/
 #somePhoto {
 	margin: 5% 20% 2% 15%;
 	border: solid rgb(253, 207, 189) 7px;
@@ -157,8 +181,12 @@ textarea {
 
 
 
+
+
+
+/*formatting for footer area*/
+/*establishes gradient and propper spacing between elements in the page footer*/
 footer {
-	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-auto-rows: minmax(100px, auto);
 	grid-gap: 18%;
